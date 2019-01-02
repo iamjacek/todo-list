@@ -1,3 +1,6 @@
+html{
+height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +9,91 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: #cd6133; */
+  background-image: linear-gradient(120deg, #cd6133 20% , yellow 400%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1{
+  margin-top: 5vh;
+  color:#fff;
+  font-weight: 800;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+width: 30vh;
+background:#6b6b6b;
+font-size: 1.2rem;
+font-weight: 700;
+margin: 0 15px 15px 15px;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1), 0 6px 15px 0 rgba(0,0,0,0.11);
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+
+}
+
+button:hover {
+  background:#7c7c7c;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.24), 0 10px 21px 0 rgba(0,0,0,0.19);
+}
+
+input {
+  padding: 10px;
+  margin: 15px;
+  color: #6b6b6b;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 70vh;
+}
+
+.theList{
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 90%;
+  margin:30px auto;
+}
+.element{
+  margin: 5px;
+  background: #6b6b6b;
+  padding: 13px 22px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 450;
+}
+
+.element:hover{
+  background: #353535;
+}
+
+@media only screen and (max-width: 768px) {
+  input {
+    width: 90vh;
+  }
 }
