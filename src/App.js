@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList'
 import TodoItems from './TodoItems'
@@ -52,6 +51,12 @@ class App extends Component {
     })
   }
 
+  toggleCheck = (e) => {
+    e.target.classList.toggle('checked')
+
+    e.target.parentNode.classList.toggle('scribble')
+  }
+
   render() {
     return (
       <div className="App">
@@ -67,7 +72,7 @@ class App extends Component {
         <TodoItems
           entries = {this.state.items}
           deleteItem = {this.deleteItem}
-
+          toggleCheck = {this.toggleCheck}
         />
 
       </div>
